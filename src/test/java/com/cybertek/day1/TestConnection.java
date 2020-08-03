@@ -1,4 +1,4 @@
-package com.cybertek.jdbc;
+package com.cybertek.day1;
 
 import org.junit.Test;
 

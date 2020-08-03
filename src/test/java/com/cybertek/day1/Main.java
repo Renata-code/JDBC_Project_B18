@@ -1,11 +1,11 @@
-package com.cybertek.jdbc;
+package com.cybertek.day1;
 import java.sql.*;
 
 public class Main {
 
     public static void main(String[] args) throws SQLException {
         //Replace the IP with your own IP address
-        String connectionStr = "jdbc:oracle:thin:@52.71.242.164:1521:XE";
+        String connectionStr = "jdbc:oracle:thin:@54.236.52.149:1521:XE";  //54.236.52.149
         String username = "hr";
         String password = "hr";
 
@@ -29,6 +29,10 @@ public class Main {
         System.out.println("First column value " + rs.getString(1) + " or " + rs.getString("REGION_ID") );
         System.out.println("SECOND column value " + rs.getString(2) + " or " + rs.getString("REGION_NAME") );
         // test branch
+
+        rs.close();
+
+        conn.close();
 
     }
 }
