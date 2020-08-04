@@ -20,7 +20,7 @@ public class iteratingresultSetBackWord {
         //rs.previous();
         //System.out.println(rs.getString(1)+" "+ rs.getString(2));
 
-        while(rs.previous()==true){
+        while(rs.previous()){
             System.out.println(rs.getString(1)+" "+ rs.getString(2));
         }
         System.out.println("-------------more moving -------------");
@@ -40,11 +40,6 @@ public class iteratingresultSetBackWord {
         rs.close();
         stmnt.close();
         conn.close();
-
-
-
-
-
 
     }
 }

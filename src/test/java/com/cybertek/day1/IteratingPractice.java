@@ -20,7 +20,7 @@ public class IteratingPractice {
                     rs.getString(3));
         }
 
-        rs.previous();
+        //rs.previous();
 
         rs.close();
         stmnt.close();

@@ -31,14 +31,14 @@ public class GettingMoreInfoAboutResultSet {
 
         for (int i = 1; i <= columnCount; i++) {
             //System.out.println("Number " + i + " column name is : " + rsmd.getColumnName(i));here gives the everything kinda
-            System.out.print(rsmd.getColumnName(i)+ "\t");// here is print not ln
+            System.out.print(rsmd.getColumnName(i)+ "\t");// here is print not ln so prints in 1 line
         }
 
-        System.out.println("---- storeing it into the list and printing it out");
+        System.out.println("---- storing it into the list and printing it out");
         // store the column names in the list
         List<String> columnNameLst = new ArrayList<>();
         for (int i = 1; i <= columnCount; i++) {
-            columnNameLst.add(  rsmd.getColumnName(i)   );
+            columnNameLst.add( rsmd.getColumnName(i)  );
         }
 
         System.out.println("columnNameLst = " + columnNameLst);
@@ -47,6 +47,8 @@ public class GettingMoreInfoAboutResultSet {
         // getting row count
         // we will use rs.last() to move to last row then call rs.getRow() method
         // -- and that will be the row count of entire ResultSet
+
+
 
         //how to move to before first row location
         rs.beforeFirst();
@@ -57,6 +59,7 @@ public class GettingMoreInfoAboutResultSet {
         stmnt.close();
         conn.close();
     }
+
 
 
 }

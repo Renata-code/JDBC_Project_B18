@@ -21,6 +21,8 @@ public class IteratingresultSet {
 
         }
 
+
+
         // TASK 1 :
         //  CREATE A NEW CLASS , ADD CONNECTION , STATEMENT , RESULTSET
         // AND TRY TO PRINT OUT EACH AND EVERYTHING UNDER COUNTRIES TABLE
