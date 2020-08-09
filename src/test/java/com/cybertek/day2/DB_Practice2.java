@@ -1,7 +1,8 @@
 package com.cybertek.day2;
 
+import com.cybertek.utility.DB_Utility;
+
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
 public class DB_Practice2 {
