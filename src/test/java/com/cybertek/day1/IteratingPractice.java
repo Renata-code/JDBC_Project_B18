@@ -16,7 +16,8 @@ public class IteratingPractice {
         // as long as rs.next() return true I know I have next row to print the data
         // we will keep looping as long as rs.next() return true
         while(rs.next()){
-            System.out.println(rs.getString(1)+" "+rs.getString(2)+" "+
+            System.out.println(rs.getString(1)+" "+
+                    rs.getString(2)+" "+
                     rs.getString(3));
         }
 

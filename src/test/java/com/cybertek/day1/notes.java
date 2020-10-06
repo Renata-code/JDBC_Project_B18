@@ -3,12 +3,12 @@ package com.cybertek.day1;
 public class notes {
     /*
     What is JDBC ?
-​
+
 Java Database Connectivity
 	--  Comes with JDK , used to work with relational database system
 	--  Its under java.sql package   import java.sql.* ;
 	--  It define set of Interfaces and classes to work with any RDBMS
-​
+
  Java App   ------ JDBC ------- Actual Database you are connecting to
 ​
  JDBC does not provide actual implementation.

@@ -26,7 +26,7 @@ public class iteratingresultSetBackWord {
         System.out.println("-------------more moving -------------");
         //move to second row
         rs.absolute(2);
-        System.out.println("currently i should be at 2 row "+rs.getRow());
+        System.out.println("currently it should be at 2 row "+rs.getRow());
         System.out.println(rs.getString(1)+" "+ rs.getString(2));
 
         rs.first();
@@ -36,6 +36,8 @@ public class iteratingresultSetBackWord {
         System.out.println(rs.getString(1)+" "+ rs.getString(2));
 
         System.out.println("rs.getRow()= "+rs.getRow());
+
+       // rs.getRow();   how to find which row im now
 
         rs.close();
         stmnt.close();

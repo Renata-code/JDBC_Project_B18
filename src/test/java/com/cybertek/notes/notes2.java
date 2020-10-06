@@ -26,7 +26,9 @@ DIFFERENCE BETWEEN JOIN AND SET OPERATORS
 
     --- INTERSECT
     --- WILL ONLY RETURN THE MATCHING(OVERLAPING) ROWS FROM BOTH RESULTSET
+
       WHAT IS A VIRTUAL TABLE  : VIEW
+
       A view is a virtual table resulted from a query and act like a table
       Its easy to create view from SQL Develoepr
       by clicking view -- new -->> provide the valid query and click ok

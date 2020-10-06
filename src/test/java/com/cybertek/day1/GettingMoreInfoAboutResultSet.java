@@ -17,6 +17,7 @@ public class GettingMoreInfoAboutResultSet {
         // ResultSetMetadata is data about the ResultSet like column count , column name
         // any many more info about the ResultSet itself
         ResultSetMetaData rsmd = rs.getMetaData();
+
         // counting how many columns we have in our ResultSet object
         int columnCount =  rsmd.getColumnCount() ;
         System.out.println("columnCount = " + columnCount);
@@ -36,12 +37,12 @@ public class GettingMoreInfoAboutResultSet {
 
         System.out.println("---- storing it into the list and printing it out");
         // store the column names in the list
-        List<String> columnNameLst = new ArrayList<>();
+        List<String> columnNameList = new ArrayList<>();
         for (int i = 1; i <= columnCount; i++) {
-            columnNameLst.add( rsmd.getColumnName(i)  );
+            columnNameList.add( rsmd.getColumnName(i)  );
         }
 
-        System.out.println("columnNameLst = " + columnNameLst);
+        System.out.println("columnNameLst = " + columnNameList);
 
         // getting column count we need ResultSetMetaData object
         // getting row count
