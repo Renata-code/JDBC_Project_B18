@@ -16,12 +16,16 @@ public class TestConnection {
         String password = "hr";
 
         // GETTING DATABASE CONNECTION TO THE SERVER
+
         try {
-            Connection conn = DriverManager.getConnection(connectionStr,username,password);
+            Connection conn = DriverManager.getConnection(connectionStr, username, password);
             System.out.println("CONNECTION Successful!!");
-        } catch (SQLException throwables) {
+        }catch
+        (SQLException throwables) {
             System.err.println("CONNECTION WAS NOT SUCCESSFUL \n" + throwables.getMessage());
         }
+
+
     }
 
 }

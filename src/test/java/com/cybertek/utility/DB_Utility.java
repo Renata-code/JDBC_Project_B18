@@ -12,7 +12,7 @@ public class DB_Utility {
 
     public static Map<String,String> getRowMap( int rowNum ){
 
-        Map<String,String> rowMap = new LinkedHashMap<>();//HashMap<>();
+        Map<String,String> rowMap = new LinkedHashMap<>(); //HashMap<>();
         try{
             rs.absolute(rowNum);
 
